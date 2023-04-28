@@ -44,12 +44,12 @@ public class BonusServiceTest {
     }
 
     @Test
-    public void shouldReturn0IfAmount1000() {
+    public void shouldReturn1IfAmount1000() {
         BonusService bonusService = new BonusService();
-        int amount = 0;
+        int amount = 1000;
 
         int actual = bonusService.calculateBonus(amount);
-        int expected = 0;
+        int expected = 1;
 
         assertEquals(actual, expected);
 
